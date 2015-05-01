@@ -1,5 +1,7 @@
 Revision history for Perl extension Uniq.
 
+	- Fixed bug where last element passed to distinct was not considered distinct (rt26406)
+
 0.01  Thu Aug 21 15:56:43 2003
 	- original version
 

@@ -62,6 +62,9 @@ sub distinct{
 		}
 
 	}
+	if ($prev && $ctr == 1){
+		push(@out,$prev);
+	}
 	return @out;
 }
 1;

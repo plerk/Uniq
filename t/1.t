@@ -1,7 +1,7 @@
 # Before `make install' is performed this script should be runnable with
 # `make test'. After `make install' it should work as `perl 1.t'
 
-print "1..6\n";
+print "1..7\n";
 
 my $i = 1;
 
@@ -35,3 +35,6 @@ printf "ok %d\n", $i++;
 print "not " if (  "@out" ne "A2 A7" );
 printf "ok %d\n", $i++;
 
+@ out = distinct sort "A1", "A2", "A3";
+print "not " if (  "@out" ne "A1 A2 A3" );
+printf "ok %d\n", $i++;
